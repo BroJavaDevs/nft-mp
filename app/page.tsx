@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React, { useState, useEffect, useRef } from 'react'
 
 export default function Home() {
-  const [vantaEffect, setVantaEffect] = useState(null);
+
   return (
     <main className='h-screen'>
       
