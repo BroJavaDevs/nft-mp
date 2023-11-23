@@ -12,17 +12,15 @@ export const metadata: Metadata = {
   keywords: ["Crypto Market", "NFT marketplace", "digital collectibles", "unique artworks", "digital asset trading", "exclusive NFTs", "collectible tokens"]
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+type Props = {
+  children: React.ReactNode,
+}
 
-  
+export default function RootLayout({ children }: Props) {
 
   return (
     <html lang="en">
-      <body className={inter.className + ` bg-gradient-to-br from-gray-200 to-purple-200 `}>
+      <body className={inter.className + ` bg-gradient-to-br from-gray-200 to-purple-200 overflow-hidden pt-16`}>
         <ThirdwebProviderLayout>
           <Navbar />
           {children}

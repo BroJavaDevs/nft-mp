@@ -19,6 +19,9 @@ import { CgProfile, CgMenu } from "react-icons/cg";
 
 import { SIDENAV_ITEMS } from './constants';
 import { SideNavItem, MenuItemWithSubMenuProps } from '@/lib/types';
+import { Button } from '../ui/button';
+import Menubar from '../main/Menubar';
+import AuthDialog from '../main/dialogs/AuthDialog';
 
 const style = {
   headerItems: `flex items-center justify-end`,
@@ -75,7 +78,8 @@ export default function Navbar() {
             </Link>
           </div>
           <div className={style.headerItem}>
-            <ConnectWallet 
+            <AuthDialog />
+            {/* <ConnectWallet 
               theme={
                 lightTheme({
                   colors: {
@@ -86,12 +90,13 @@ export default function Navbar() {
               }
               hideTestnetFaucet
               switchToActiveChain
+              detailsBtn={() => <h1>sdawd</h1>}
               //welcomeScreen={() => <></>}
               modalTitleIconUrl='/assets/logo-transparent.png'
-              />
+              /> */}
           </div>
           <div className='text-zinc-700 text-3xl font-black hover:text-zinc-500 cursor-pointer flex lg:hidden'>
-              <CgMenu />
+            <Menubar />
           </div>
         </div>
     </nav>
