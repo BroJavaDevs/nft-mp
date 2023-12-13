@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect, useRef } from 'react'
-import '@/lib/three/Jars'
+//import '@/lib/three/Jars'
 
 const ReflectCube = () => {
   let app;
