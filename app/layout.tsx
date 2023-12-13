@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import ThirdwebProviderLayout from '@/components/providers/ThirdwebProviderLayout'
 import Navbar from '@/components/partials/Navbar'
+import Footer from '@/components/partials/Footer'
+import { ThemeProvider } from '@/components/providers/ThemeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,10 +22,17 @@ export default function RootLayout({ children }: Props) {
 
   return (
     <html lang="en">
-      <body className={inter.className + ` bg-gradient-to-br from-gray-200 to-purple-200 overflow-hidden pt-16`}>
+      <body className={inter.className + `overflow-hidden pt-16`}>
         <ThirdwebProviderLayout>
-          <Navbar />
-          {children}
+          <ThemeProvider
+            attribute='class'
+            defaultTheme='dark'
+            enableSystem
+            disableTransitionOnChange>
+              <Navbar />
+              {children}
+              <Footer />
+          </ThemeProvider>
         </ThirdwebProviderLayout>
       </body>
     </html>
