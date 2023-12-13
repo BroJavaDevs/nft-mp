@@ -22,18 +22,18 @@ export default function RootLayout({ children }: Props) {
 
   return (
     <html lang="en">
-      <body className={inter.className + `overflow-hidden pt-16`}>
-        <ThirdwebProviderLayout>
-          <ThemeProvider
-            attribute='class'
-            defaultTheme='dark'
-            enableSystem
-            disableTransitionOnChange>
-              <Navbar />
+      <body className={inter.className + `overflow-hidden`}>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='dark'
+          enableSystem
+          disableTransitionOnChange>
+          <ThirdwebProviderLayout>
+            <Navbar />
               {children}
-              <Footer />
-          </ThemeProvider>
-        </ThirdwebProviderLayout>
+            <Footer />
+          </ThirdwebProviderLayout>
+        </ThemeProvider>
       </body>
     </html>
   )

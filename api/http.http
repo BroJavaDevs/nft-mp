@@ -1,0 +1,4 @@
+GET /api/v2/collections HTTP/1.1
+Accept: application/json
+X-Api-Key: 77b3d0e57b5e40cfadec9911b8b870fd
+Host: api.opensea.io

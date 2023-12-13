@@ -23,6 +23,6 @@
       "@/lib/*": ["./lib/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/three/ReflectingCube.ts", "lib/three/Jars.js", "tailwind.config.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/three/ReflectingCube.ts", "lib/three/Jars.js", "tailwind.config.js", "api/opensea.ts"],
   "exclude": ["node_modules"]
 }

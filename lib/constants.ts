@@ -1,25 +1,22 @@
 export const MENU_LIST: IAccordion[] = [
   {
+    title: "News",
+    content: [{ name: "NFT News", path: "/news" }],
+  },
+  {
     title: "Collections",
     content: [
-      { name: "awdasd", path: "/" },
-      { name: "", path: "/" },
+      { name: "Explore", path: "/collections" },
+      { name: "Trending", path: "/trending" },
     ],
   },
   {
-    title: "Stats",
-    content: [
-      { name: "Rankings", path: "/rankings" },
-      { name: "Activity", path: "/activity" },
-    ],
+    title: "Trade",
+    content: [{ name: "trade", path: "/trade" }],
   },
   {
-    title: "Resources",
-    content: [
-      { name: "Learn", path: "/learn" },
-      { name: "Blog", path: "/blog" },
-      { name: "Community standards", path: "community-standards" },
-    ],
+    title: "Coin Analytics",
+    content: [{ name: "Crypto analytics", path: "/coins" }],
   },
 ];
 

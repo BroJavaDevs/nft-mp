@@ -14,9 +14,7 @@ import {
 import Link from 'next/link'
 import { CgMenu } from 'react-icons/cg'
 import { AccordionItem } from './AccordionItem'
-import { IAccordion, MENU_LIST } from '@/lib/constants'
-
-
+import { MENU_LIST } from '@/lib/constants'
 
 export default function Menubar() {
   return (
