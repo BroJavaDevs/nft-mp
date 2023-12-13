@@ -1,6 +1,6 @@
 "use client"
-import '@/lib/three/ReflectingCube'
-import ReflectCube from '@/lib/three/useReflectCube'
+//import '@/lib/three/ReflectingCube'
+//import ReflectCube from '@/lib/three/useReflectCube'
 
 import React from 'react'
 
