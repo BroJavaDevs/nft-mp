@@ -16,9 +16,6 @@ import {
 } from "@thirdweb-dev/react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { CgProfile, CgMenu } from "react-icons/cg";
-
-import { SIDENAV_ITEMS } from "./constants";
-import { SideNavItem, MenuItemWithSubMenuProps } from "@/lib/types";
 import { Button } from "../ui/button";
 import Menubar from "../main/Menubar";
 import AuthDialog from "../main/dialogs/AuthDialog";
