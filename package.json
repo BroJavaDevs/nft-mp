@@ -28,6 +28,7 @@
     "next-themes": "^0.2.1",
     "opensea-js": "^7.0.0",
     "pino": "^8.17.0",
+    "pino-pretty": "^10.3.0",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",

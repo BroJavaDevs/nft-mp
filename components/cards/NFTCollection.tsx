@@ -1,4 +1,3 @@
-import { sdk } from '@/api/thirdweb'
 import Image from 'next/image'
 import React from 'react'
 
