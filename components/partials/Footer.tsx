@@ -5,6 +5,7 @@ import IconButton from '../client/IconButton'
 
 
 export default function Footer() {
+  
   return (
     <footer className='dark:bg-[#121212] pt-[130px] px-[90px]'>
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 mb-14'>
